@@ -1,0 +1,320 @@
+/* .icon {
+    width:6rem;
+    height:6rem;
+} */
+:root{
+    --primary-color:#0078ff;
+}
+/* Start Header */
+
+header{
+    background-image: url(../image/img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header h4{
+    font-size: 40px;
+}
+header .font{
+    font-size: 60px;
+}
+header h4::after{
+content:"|";
+animation-name: typing;
+animation-duration: 9s;
+animation-iteration-count: infinite;
+}
+@keyframes typing{
+0%{content:"D|"}
+2%{content:"De|"}
+4%{content:"Dev|"}
+6%{content:"Devel|"}
+8%{content:"Develo|"}
+10%{content:"Develop|"}
+12%{content:"Developer|"}
+14%{content:"Develope|"}
+16%{content:"Develop|"}
+18%{content:"Develo|"}
+20%{content:"Devel|"}
+22%{content:"Deve|"}
+24%{content:"Dev|"}
+26%{content:"De|"}
+28%{content:"D|"}
+30%{content:"D|"}
+32%{content:"De|"}
+34%{content:"Des|"}
+36%{content:"Desi|"}
+38%{content:"Desig|"}
+40%{content:"Design|"}
+42%{content:"Designe|"}
+44%{content:"Designer|"}
+46%{content:"Designe|"}
+48%{content:"Design|"}
+50%{content:"Desig|"}
+52%{content:"Desi|"}
+54%{content:"Des|"}
+56%{content:"De|"}
+58%{content:"D|"}
+60%{content:"F|"}
+62%{content:"Fr|"}
+64%{content:"Fre|"}
+66%{content:"Free|"}
+68%{content:"Freel|"}
+70%{content:"Freela|"}
+72%{content:"Freelan|"}
+74%{content:"Freelanc|"}
+76%{content:"Freelance|"}
+78%{content:"Freelancer|"}
+80%{content:"Freelance|"}
+82%{content:"Freelanc|"}
+84%{content:"Freelan|"}
+86%{content:"Freela|"}
+88%{content:"Freel|"}
+90%{content:"Free"}
+92%{content:"Fre"}
+94%{content:"Fr|"}
+96%{content:"F|"}
+98%{content:"P|"}
+100%{content:"Ph|"}
+0%{content:"Pho|"}
+2%{content:"Phot|"}
+4%{content:"Photo|"}
+6%{content:"Photog|"}
+8%{content:"Photogr|"}
+10%{content:"Photogra|"}
+12%{content:"Photograp|"}
+14%{content:"Photograph|"}
+16%{content:"Photographe|"}
+18%{content:"Photographer|"}
+20%{content:"Photographe|"}
+22%{content:"Photograph|"}
+24%{content:"Photograp|"}
+26%{content:"Photogra|"}
+28%{content:"Photogr|"}
+30%{content:"Photog|"}
+32%{content:"Photo|"}
+34%{content:"Phot|"}
+36%{content:"Pho|"}
+}
+/* End Header */
+/*Start Navbar */
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: white;
+}
+nav .nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    top: 38px;
+    left: -3PX;
+    transition: width 0.3s;
+}
+.nav-link:focus,nav .nav-link:hover::before{
+width: 100%;
+}
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.work:target) .work-link::before,
+body:has(.blog:target) .blog-link::before,
+body:has(.dropdown:target) .drop-link::before,
+body:has(.contact:target) .contact-link::before{
+    width: 100%;
+}
+/*End Navbar */
+.caption h2{
+    font-size: 3rem;
+}
+.caption .border{
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 6px;
+    margin: auto;
+}
+.inner i{
+    border-radius: 50%;
+    border: 10px solid var(--primary-color);
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    text-align: center;
+}
+.section3 .inner .icon{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+}
+.icon:hover{
+    background-color:var(--primary-color);
+    color: white;
+    border-color: rgb(201, 201, 227);
+    transition: all 0.4s;
+}
+ /* .section1{
+    background-image: url(../image/img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.overlay-m{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}  */
+body{
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+.section3 .inner{
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.section2 .br .container{
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.section4{
+    background-image: url(../image/img/counters-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+    background-color: rgba(43, 110, 255, 0.8);
+}
+.section4 .ico i{
+    height: 80px;
+    padding: 15px;
+    width: 80px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 10px solid white;
+    text-align: center;
+    color: white;
+}
+.section4 .x{
+    margin-top: 6rem;
+}
+.portfolio .inn img{
+    width: 100%; 
+    border-radius: 5px;
+}
+.work-img{
+overflow: hidden;
+
+}
+.inn:hover img{
+   transform: scale(1.1);
+   transition: all 0.8s ease-in-out;
+}
+.portfolio .inn{
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.brd{
+    background-color: var(--primary-color);
+    width: 90px;
+    height: 4px;
+    margin-bottom: 40px;
+}
+.background .img{
+    width: 100%;
+}
+.section5 .background{
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.background .small-img img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.background h4:hover{
+    color: #0078ff;
+    transition: all 1s;
+    cursor: pointer;
+}
+.overlay-out .innerly{
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+/*Start Slider */
+.slider{
+    background-image: url(../image/img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.overlay-mf{
+    background-color: rgba(43, 110, 255, 0.8);
+}
+.client-img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.carousel-indicators [data-bs-target]{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+/* End Slider */
+/* Start Contact */
+.contact{
+    background-image: url(../image/img/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.overlay-mt{
+    background-color: rgba(43, 110, 255, 0.7);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+textarea{
+    resize: horizontal;
+}
+button{
+    padding: 12px 30px;
+    border-radius: 30px 30px ;
+    border-color: transparent;
+    background-color: var(--primary-color);
+    color: white;
+}
+button:hover{
+    background-color:rgba(43, 110, 255, 0.7);
+    transition: all 0.5s;
+    border-color: rgb(201, 201, 227);
+    border: 2px solid ;
+}
+.but{
+    margin-left: 30%;
+    margin-bottom: 40px;
+}
+.iconss{
+    width: 2rem;
+    height: 2rem;
+    border:3px solid #0078ff;
+    padding: 20px;
+}
+.iconss:hover{
+    background-color:var(--primary-color);
+    color: white;
+    border-color: rgb(201, 201, 227);
+    transition: all 0.4s;
+}
+
+
+
+
+
+
+
+/* End Contact */
