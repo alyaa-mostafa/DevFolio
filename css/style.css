@@ -207,9 +207,14 @@ body{
 overflow: hidden;
 
 }
-.inn:hover img{
+.work-img{
+    overflow: hidden;
+}
+.work-img img{
+    transition: 0.5s;
+}
+.work-img:hover img{
    transform: scale(1.1);
-   transition: all 0.8s ease-in-out;
 }
 .portfolio .inn{
     background-color: white;
